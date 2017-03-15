@@ -1,7 +1,12 @@
 (function(){
+
   var count= localStorage.getItem ('on_click');
-document.getElementById('result').innerHTML = count;
-  console.log('fghjkl')
+  if(count == null){
+    count = 0;
+    }
+  document.getElementById('result').innerHTML = count;
+
+  console.log(count)
 })()
 //  Write your JavaScript here
 var greet = document.getElementById ('box');
