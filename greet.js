@@ -43,7 +43,8 @@ var greeting = document.getElementById ('box').value= '';
 
 
 var count= localStorage.getItem ('on_click');
-if(count == null){
+if(count == null)
+{
   count = 0;
   }
 count++;
