@@ -6,7 +6,7 @@
     }
   document.getElementById('result').innerHTML = count;
 
-  console.log(count)
+  //console.log(count)
 })()
 //  Write your JavaScript here
 var greet = document.getElementById ('box');
