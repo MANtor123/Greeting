@@ -1,14 +1,20 @@
 describe('The greet function', function() {
 
-  it('should greet name in English', function() {
-    assert.equal('Hello, Mponeng', myFunction('Mponeng'));
+  it('should greet Mponeng in English', function() {
+
+    var greet = greetName('Mponeng', 'English')
+    assert.equal(('Hello Mponeng'), greet);
   });
 
-  it('should greet name in isiXhosa', function() {
-    assert.equal('Molweni,Mponeng', myFunction('Mponeng'));
-  });
+  it('should greet Mponeng in isiXhosa', function(){
 
-  it('should greet name in Sotho', function(){
-    assert.equal('Dumela,Mponeng', myFunction('Mponeng'));
-  });
+  var greet = greetName('Mponeng', 'isiXhosa')
+  assert.equal(('Molo Mponeng'), greet)
+});
+
+  it('should greet Mponeng in Sotho', function(){
+
+    var greet = greetName('Mponeng', 'Sotho')
+    assert.equal(('Dumela Mponeng'), greet)
+  })
 });

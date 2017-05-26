@@ -5,23 +5,34 @@ var namesGreeted = {};
 var greetingsCounter = 0;
 
 
+function checkedLanguage(){
+  if (language[0].checked) {
+    paragraph.innerHTML = 'Hello ' + name;
+  } else if (language[1].checked) {
+    paragraph.innerHTML = 'Molweni ' + name;
 
+  } else if (language[2].checked) {
+    paragraph.innerHTML = 'Dumela ' + name;
+}
 
 
 function myfunction(){
+  var name = greet.value
   if (namesGreeted[greet.value] === undefined) {
     greetingsCounter++;
     namesGreeted[greet.value] = 0;
 
-
-    if (language[0].checked) {
-      paragraph.innerHTML = 'Hello ' + greet.value;
-    } else if (language[1].checked) {
-      paragraph.innerHTML = 'Molweni ' + greet.value;
-
-    } else if (language[2].checked) {
-      paragraph.innerHTML = 'Dumela ' + greet.value;
-    }
+    paragraph.innerHTML = greetName(name, checkedLanguage())
+  // display(paragraph);
+    // greetingsCounter(name);
+    // if (language[0].checked) {
+    //   paragraph.innerHTML = 'Hello ' + name;
+    // } else if (language[1].checked) {
+    //   paragraph.innerHTML = 'Molweni ' + name;
+    //
+    // } else if (language[2].checked) {
+    //   paragraph.innerHTML = 'Dumela ' + name;
+    // }
     var greeting = document.getElementById('box').value = '';
 
 
@@ -44,7 +55,6 @@ function myfunction(){
   }
   document.getElementById('result').innerHTML = count;
 
-  console.log(count)
 })()
 
 
@@ -54,3 +64,4 @@ function resetfunction() {
   document.getElementById('result').innerHTML = count;
 
 }
+};

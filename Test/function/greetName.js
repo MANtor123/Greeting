@@ -1,11 +1,28 @@
-function myFunction(name, language) {
+function greetName(name, language){
+if(language === 'English'){
+  return 'Hello ' + name;
+  }
 
-  if (language[0].checked) {
-    paragraph.innerHTML = 'Hello ' + name;
-  } else if (language[1].checked) {
-    paragraph.innerHTML = 'Molweni ' + name;
+  else if(language === 'isiXhosa'){
+    return 'Molo ' + name;
+  }
 
-  } else if (language[2].checked) {
-    paragraph.innerHTML = 'Dumela ' + name;
+  else if(language === 'Sotho'){
+    return 'Dumela ' + name;
   }
 }
+
+
+// function checkedLanguage(language){
+//   if(language === 'English'){
+//     return 'Hello ' + name;
+//     }
+//
+//     else if(language === 'isiXhosa'){
+//       return 'Molo ' + name;
+//     }
+//
+//     else if(language === 'Sotho'){
+//       return 'Dumela ' + name;
+//     }
+// }
