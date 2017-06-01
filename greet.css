@@ -2,6 +2,7 @@ body {
    background: url(images/down.jpg) repeat;
    -webkit-background-clip: text;
    text-align: center;
+   background-size: cover;
  }
 
 

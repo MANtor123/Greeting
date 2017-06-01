@@ -1,8 +1,12 @@
-function greetingsCounter(name){
-  var name = greet.value
-  if (namesGreeted[name] === undefined) {
-    greetingsCounter++;
-    namesGreeted[name] = 0;
+var namesGreeted = {};
+var greetingCounter = 0;
+//var name = greet.value
 
-}
+function greetingsCounter(name) {
+  if (namesGreeted[name] === undefined) {
+    greetingCounter++;
+    namesGreeted[name] = 0;
+  }
+
+  return greetingCounter;
 }

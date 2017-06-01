@@ -15,14 +15,14 @@
 
   <h1 id='bgClip' class='shake'> Greeting </h1>
   <input id='box' type="textbox" class="textarea" /></input>
-  <input id='button' class='btn' onclick="myfunction()"><span>Greet</span> </button>
+  <button id='button' class='btn' onclick="myfunction()"> <span>Greet</span> </button>
   <p id="paragraph" class="animated infinite bounce"></p>
 
 
   <div id="radioButton">
-    <input type="radio" name="language" value="English">English</input>
-    <input type="radio" name="language" value="IsiXhosa">IsiXhosa</input>
-    <input type="radio" name="language" value="Sotho">Sotho</input>
+    <input type="radio" name="language" id='English' value="English">English</input>
+    <input type="radio" name="language" id='isiXhosa' value="IsiXhosa">IsiXhosa</input>
+    <input type="radio" name="language" id='Sotho' value="Sotho">Sotho</input>
   </div>
 
   <div id='result' class='text animated pulse'></div>
@@ -30,8 +30,11 @@
 
   <button id='resetButt' type="reset" value="RESET" onclick="resetfunction()">RESET</button>
 
-  <script src='Test/function/greetingsCounter.js'> </script>
-  <script src='Test/function/greetName.js'> </script>
+
+  <script src='./Test/function/localDisplay.js'> </script>
+  <script src ='./Test/function/checkLanguage.js'> </script>
+  <script src='./Test/function/greetingsCounter.js'> </script>
+  <script src='./Test/function/greetName.js'> </script>
   <script src="greet.js">
   </script>
 </body>
