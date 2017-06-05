@@ -1,10 +1,12 @@
-(function(){
+function localDisplay(){
+  if(typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+      }
+      else {
+          localStorage.clickcount = 1;
+      }
 
-    var count= localStorage.getItem ('on_click');
-    if(count == null){
-      count = 0;
-    }
-    // document.getElementById('result').innerHTML = localDisplay();
-    //
-    //console.log(count)
-  })()
+}
+return localStorage.clickcount;
+};
